@@ -1,9 +1,14 @@
-body {
-    background-image: linear-gradient(#F4F1DE, #616569);
-}
-
 p {
     font-family: monospace;
+}
+
+#startPage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-image: linear-gradient(#616569, #F4F1DE);
 }
 
 #logoImage {
@@ -46,4 +51,21 @@ p {
 @keyframes appear {
     0% {opacity: 0};
     100% {opacity: 1};
+}
+
+#test {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #F4F1DE;
+}
+
+#learn {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
