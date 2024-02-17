@@ -1,3 +1,49 @@
 body {
-    background-color: powderblue;
+    background-image: linear-gradient(#F4F1DE, #616569);
+}
+
+p {
+    font-family: monospace;
+}
+
+#logoImage {
+    width: 600px;
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    animation-name: logoStart;
+    animation-duration: 2s;
+}
+
+#title {
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    font-size: 100px;
+    animation-name: start;
+    animation-duration: 2s;
+}
+
+@keyframes start {
+    0% {top: 10%; opacity: 0}
+    100% {top: 45%; opacity: 1}
+}
+
+@keyframes logoStart {
+    0% {top: -15%; opacity: 0}
+    100% {top: 10%; opacity: 1}
+}
+
+#scrollImage {
+    width: 1%;
+    position: absolute;
+    bottom: 5%;
+    left: 49%;
+    animation: appear ease 10s;
+}
+
+@keyframes appear {
+    0% {opacity: 0};
+    100% {opacity: 1};
 }
