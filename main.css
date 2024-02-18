@@ -128,7 +128,7 @@ body {
     100% {width: 8%}
 }
 
-#question2, #question2-3 {
+#question2, #question2-3, #question3-2 {
     position: absolute;
     left: 33%;
 }
