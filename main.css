@@ -2,6 +2,10 @@ p, button {
     font-family: monospace;
 }
 
+body {
+    background-color: #F4F1DE;
+}
+
 #startPage {
     width: 100%;
     height: 100%;
@@ -86,4 +90,114 @@ p, button {
 
 #learning:hover, #quizing:hover {
     color: rgb(210, 210, 210);
+}
+
+.progress {
+    width: 100%;
+    height: 1%;
+    position: absolute;
+    top: 5%;
+    left: 0%;
+}
+
+#question1, #question2, #question3, #question4, #question5 {
+    width: 8%;
+    height: 100%;
+    background-color: white;
+}
+
+#question1 {
+    position: absolute;
+    left: 20%;
+}
+
+#question2 {
+    position: absolute;
+    left: 33%;
+}
+
+#question3 {
+    position: absolute;
+    left: 46%;
+}
+
+#question4 {
+    position: absolute;
+    left: 59%;
+}
+
+#question5 {
+    position: absolute;
+    left: 72%;
+}
+
+#letter {
+    width: 30%;
+    height: 50%;
+    background-color: #3D405B;
+    border-radius: 50px;
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+#question {
+    font-size: 25px;
+    position: absolute;
+    top: 65%;
+    left: 39%;
+}
+
+.options {
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+}
+
+#option1, #option2, #option3, #option4 {
+    background-color: #3D405B;
+    width: 45%;
+    height: 45%;
+    border-radius: 15px;
+}
+
+#option1 {
+    position: absolute;
+    animation-name: load;
+    animation-duration: 2s;
+}
+
+#option2 {
+    position: absolute;
+    right: 0%;
+    animation-name: load;
+    animation-duration: 2s;
+}
+
+#option3 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    animation-name: load2;
+    animation-duration: 2s;
+}
+
+#option4 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    animation-name: load2;
+    animation-duration: 2s;
+}
+
+@keyframes load {
+    0% {top: 50%}
+    100% {top:0%}
+}
+
+@keyframes load2 {
+    0% {top: 100%}
+    100% {top: 55%}
 }
