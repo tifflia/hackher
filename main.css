@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 p, button {
     font-family: monospace;
 }
@@ -12,14 +16,13 @@ body {
     position: absolute;
     top: 0%;
     left: 0%;
-    background-image: linear-gradient(#3D405B, #F4F1DE);
+    background-image: linear-gradient(#3D405B,#F4F1DE);
+    text-align: center;
 }
 
 #logoImage {
-    width: 600px;
-    position: absolute;
-    top: 10%;
-    left: 27%;
+    width: 70vh;
+    padding-top: 5vh;
     animation-name: logoStart;
     animation-duration: 2s;
 }
@@ -31,18 +34,14 @@ body {
 
 #description {
     text-align: center;
-    font-size: 20px;
-    position: absolute;
+    font-size: 3vh;
     bottom: 6%;
     left: 38%;
     animation: appear ease 5s;
 }
 
 #scrollImage {
-    width: 1%;
-    position: absolute;
-    bottom: 5%;
-    left: 49.5%;
+    width: 3vh;
     animation: appear ease 5s;
 }
 
@@ -66,6 +65,7 @@ body {
     position: absolute;
     top: 0%;
     left: 0%;
+    text-align: center;
 }
 
 #quiz {
@@ -74,22 +74,22 @@ body {
     position: absolute;
     top: 0%;
     right: 0%;
+    text-align: center;
 }
 
 #learning, #quizing {
-    width: 50%;
-    height: 10%;
-    font-size: 200%;
+    font-size: 4vh;
     background-color: #3D405B;
     color: white;
     border-radius: 15px;
-    position: absolute;
-    top: 45%;
-    left: 28%;
+    margin-top: 50%;
+    padding: 2vh;
 }
 
 #learning:hover, #quizing:hover {
     color: rgb(210, 210, 210);
+    background-color: #121420;
+    cursor: pointer;
 }
 
 .progress {
@@ -100,23 +100,40 @@ body {
     left: 0%;
 }
 
-#question1, #question2, #question3, #question4, #question5 {
+#question1, #question2, #question3, #question4, #question5, #question1-2, #question2-3, #question3-3 {
     width: 8%;
     height: 100%;
     background-color: white;
 }
 
-#question1 {
+#question2-2, #question3-2 {
+    width: 8%;
+    height: 100%;
+    background-color: #3D405B;
+}
+
+#question1, #question1-2, #question2-2 {
     position: absolute;
     left: 20%;
 }
 
-#question2 {
+#question1-2, #question2-3, #question3-3 {
+    background-color: #3D405B;
+    animation-name: progression;
+    animation-duration: 2s;
+}
+
+@keyframes progression {
+    0% {width: 2%}
+    100% {width: 8%}
+}
+
+#question2, #question2-3 {
     position: absolute;
     left: 33%;
 }
 
-#question3 {
+#question3, #question3-3 {
     position: absolute;
     left: 46%;
 }
@@ -134,26 +151,50 @@ body {
 #letter {
     width: 30%;
     height: 50%;
-    background-color: #3D405B;
+    background-color: #F2CC8F;
     border-radius: 50px;
     position: absolute;
     top: 15%;
     left: 35%;
 }
 
+#letterImage {
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+#letterImage2 {
+    width: 35%;
+    position: absolute;
+    top: 10%;
+    left: 32%;
+}
+
+#letterImage3 {
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
 #question {
     font-size: 25px;
     position: absolute;
     top: 65%;
-    left: 39%;
+    left: 38%;
+    text-align: center;
 }
 
 .options {
     width: 50%;
     height: 20%;
     position: absolute;
-    bottom: 5%;
+    top: 75%;
     left: 25%;
+    animation-name: load;
+    animation-duration: 2s;
 }
 
 #option1, #option2, #option3, #option4 {
@@ -161,43 +202,37 @@ body {
     width: 45%;
     height: 45%;
     border-radius: 15px;
-}
-
-#option1 {
-    position: absolute;
-    animation-name: load;
-    animation-duration: 2s;
+    border: none;
 }
 
 #option2 {
     position: absolute;
     right: 0%;
-    animation-name: load;
-    animation-duration: 2s;
 }
 
 #option3 {
     position: absolute;
     bottom: 0%;
     left: 0%;
-    animation-name: load2;
-    animation-duration: 2s;
 }
 
 #option4 {
     position: absolute;
     bottom: 0%;
     right: 0%;
-    animation-name: load2;
-    animation-duration: 2s;
 }
 
 @keyframes load {
-    0% {top: 50%}
-    100% {top:0%}
+    0% {top: 90%}
+    100% {top:75%}
+} 
+
+#letters {
+    font-size: 25px;
+    color: white;
+    margin: 0px;
 }
 
-@keyframes load2 {
-    0% {top: 100%}
-    100% {top: 55%}
+#letters:hover {
+    color: rgb(210, 210, 210);
 }
