@@ -31,7 +31,7 @@ p, button {
     position: absolute;
     bottom: 6%;
     left: 38%;
-    animation: appear ease 10s;
+    animation: appear ease 5s;
 }
 
 #scrollImage {
@@ -39,7 +39,7 @@ p, button {
     position: absolute;
     bottom: 5%;
     left: 49.5%;
-    animation: appear ease 10s;
+    animation: appear ease 5s;
 }
 
 @keyframes appear {
@@ -85,6 +85,5 @@ p, button {
 }
 
 #learning:hover, #quizing:hover {
-    background-color: #3a3d59;
     color: rgb(210, 210, 210);
 }

@@ -1,3 +1,7 @@
-function myFunction() {
-    document.getElementById("demo").innerHTML = 5 + 6;
+function practice() {
+    window.location.href = "practice.html";
+}
+
+function quiz() {
+    window.location.href = "quiz.html";
 }
