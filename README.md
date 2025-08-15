@@ -1,3 +1,5 @@
+# SignChimp
+
 ## Inspiration
 
 Communication is essential in many contexts, and one of the beautiful things about it is the many methods that humans, animals, and even cells use to communicate. Our project was inspired by how AI and machine learning can aid education and communication. Sign language is an incredibly useful tool used by more than 72 million people worldwide (National Geographic, 2023). We were inspired by other learning apps and tools to create a similar model using AI to aid in teaching and translating sign language in real time using the AI software. There are many ways to learn new languages, but our project’s goal was to make it as interactive and engaging as possible to encourage more people to gain a basic grasp of sign language to create a more inclusive and understanding society. We also decided on a chimp mascot since chimpanzees and gorillas are the only animals other than humans to understand sign language.
